@@ -1,12 +1,15 @@
 package com.mystore.app;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 class Product {
     
     private int id;
     private String name;
     private String barcode;
 
-    Barcode barCoder = new Barcode();
+    @Autowired
+    private Barcode barCoder;
 
     public Product() {
         System.out.println("In Product constructor");
