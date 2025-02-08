@@ -5,8 +5,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 public class App {
     public static void main(String[] arg) {
-
-        // Load Spring application context
+        
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 
         Product p1 = context.getBean(Product.class);
